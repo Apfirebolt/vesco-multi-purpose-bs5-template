@@ -16,7 +16,7 @@ This theme was part of the course I enrolled in on Udemy long ago. It had this a
 | aligned    |     aligned |    aligned   |
 
 ## Plugins
-```
+
 | Library	  | Purpose 						|
 | ----------- | ----------------------- 		|
 | Bootstrap 5 | CSS Framework without JQuery |
@@ -25,7 +25,6 @@ This theme was part of the course I enrolled in on Udemy long ago. It had this a
 | PureCounter JS | Animated Counters |
 | Glightbox | Lightbox Gallery |
 | Isotope Layout | Gallery image classification |
-```
 
 ## Authors
 
