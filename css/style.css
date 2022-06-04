@@ -277,8 +277,10 @@ header {
 }
 
 .header-scrolled {
-  background: #41464b;
+  background: transparent;
   transition: all 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
 }
 
 .logo a {
@@ -291,6 +293,11 @@ header {
 
 .fixed-top {
   height: 70px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: rgb(51, 11, 11);
 }
 /* Home Section */
 .bg-parallax {
