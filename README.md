@@ -6,15 +6,6 @@
 
 This theme was part of the course I enrolled in on Udemy long ago. It had this as the final project. I really liked the design of it. So, I decided to re-master this using Bootstrap 5 and other updated libraries. This project uses various plugins for sliders, animated counters and carousel.
 
-| Library | Right align | Center align |
-|:-----------|------------:|:------------:|
-| Bootstrap 5       |        This |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |    aligned   |
-
 ## Plugins
 
 | Library	  | Purpose 						|
@@ -33,5 +24,19 @@ This theme was part of the course I enrolled in on Udemy long ago. It had this a
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Template Screenshots
+
+Please find some of the screenshots of the template. Below is the contact section of this single page template.
+
+![alt text](./screenshots/1.png)
+
+Services section.
+
+![alt text](./screenshots/2.png)
+
+Navigation menu and hero section. 
+
+![alt text](./screenshots/3.png)
 
 
