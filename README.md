@@ -6,6 +6,15 @@
 
 This theme was part of the course I enrolled in on Udemy long ago. It had this as the final project. I really liked the design of it. So, I decided to re-master this using Bootstrap 5 and other updated libraries. This project uses various plugins for sliders, animated counters and carousel.
 
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| This       |        This |     This     |
+| column     |      column |    column    |
+| will       |        will |     will     |
+| be         |          be |      be      |
+| left       |       right |    center    |
+| aligned    |     aligned |    aligned   |
+
 ## Plugins
 ```
 | Library	  | Purpose 						|
