@@ -35,6 +35,42 @@ p {
     margin: 0 0 30px 0;
 }
 
+/* Icon Styling */
+.social-list {
+  padding-left: 0;
+  list-style: none;
+
+}
+
+.social-list li {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-top: 0.5rem;
+  margin-right: 2.5rem;
+}
+
+.social-list i.bi {
+  font-size: 44px;
+  color: #34c6d3;
+}
+
+.icon-gray i {
+  color: #41464b;
+}
+
+.icon-gray i:hover {
+  color:rgb(51, 11, 11);
+}
+
+.icon-white {
+  color: #fff;
+}
+
+.content-title-white h3 {
+  color: #fff;
+}
+
 /*---- content title underline ----*/
 
 .content-title-underline {
@@ -76,7 +112,36 @@ p {
   background-color: #34c6d3;
 }
 
-
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #34c6d3;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #41464b;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* Header Styles */
 header {
@@ -327,6 +392,11 @@ header {
   padding-bottom: 0px;
 }
 
+#work .img-responsive {
+  max-width:100%;
+  max-height:100%;  
+}
+
 .row.no-gutters [class*=col-] {
   padding-left: 0;
   padding-right: 0;
@@ -379,6 +449,11 @@ h4.team-member-designation {
   padding-bottom: 0;
 }
 
+.team-swiper img {
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 /* Testimonial */
 #testimonial-section .content-box {
   padding-bottom: 0px;
@@ -397,31 +472,36 @@ h4.team-member-designation {
   text-align: center;
 }
 
-.testimonial img {
-  max-width: 120px;
-  margin: 0 auto;
+.client .img-responsive {
+  max-width: 240px;
 }
 
-.testimonial blockquote {
+.swiper .swiper-slide img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 0.75rem auto;
+}
+
+.swiper blockquote {
   border: none;
   padding: 6px 150px;
   position: relative;
 }
 
-.testimonial blockquote p {
+.swiper blockquote p {
   color: #fff;
   font-style: italic;
   font-family: Georgia, sans-serif;
 }
 
-.testimonial blockquote::before,
-.testimonial blockquote::after {
+.swiper blockquote::before,
+.swiper blockquote::after {
   font-size: 80px;
   font-family: Georgia, sans-serif;
   position: absolute;
 }
 
-.testimonial blockquote::before {
+.swiper blockquote::before {
   content: "\201C";
   color: #fff;
   top: -20px;
@@ -429,7 +509,7 @@ h4.team-member-designation {
   ;
 }
 
-.testimonial blockquote::after {
+.swiper blockquote::after {
   content: "\201D";
   color: #fff;
   top: 20px;
@@ -609,6 +689,21 @@ form .form-control {
   color: #fff;
 }
 
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border: none;
+  outline: 0;
+}
+
 /* ---------- copyright -------------*/
 
 #footer-bottom {
@@ -651,4 +746,8 @@ form .form-control {
 
 #footer-menu a:hover {
   color: #34c6d3;
+}
+
+.swiper, .team-swiper, .client-swiper {
+  overflow: hidden;
 }
