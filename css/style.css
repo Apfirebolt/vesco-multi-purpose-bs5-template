@@ -790,3 +790,68 @@ input[type="color"]:focus,
 .swiper, .team-swiper, .client-swiper {
   overflow: hidden;
 }
+
+@media (max-width: 767px) {
+  .fixed-top {
+    height: 60px;
+  }
+  
+  #work-filters {
+    width: 100%;
+    padding: 0;
+  }
+
+  #about-bg-diagonal {
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+    height: 350px;
+}
+  #about-content-box {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  /*    services  */
+  .service-item-icon i.bi {
+      height: 58px;
+      width: 58px;
+      padding: 7px;
+  }
+  .service-item-title h3 {
+      font-size: 17px;
+  }
+
+  /* -----   about ------ */
+  #about-content-box {
+      margin-top: 40px;
+  }
+
+  /*-------  testimonial ------- */
+  .swiper img {
+      max-width: 80px;
+  }
+  .swiper blockquote {
+      padding: 6px 30px;
+  }
+  .swiper blockquote::before {
+      left: 0px;
+  }
+  .swiper blockquote::after {
+      right: 4px;
+      top: 110px;
+
+  }
+  .swiper blockquote p {
+      font-size: 16px;
+  }
+  /*    pricing  */
+  .swiper-box {
+      /* padding: 50px 0;
+      border: 3px solid #34c6d3; */
+      margin: 10px 0;
+  }
+}
+
