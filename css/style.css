@@ -145,7 +145,7 @@ p {
 
 /* Header Styles */
 header {
-  background-color: burlywood;
+  background-color:rgb(51, 11, 11);;
   padding: 0.25rem 0.50rem;
   transition: all 0.5s;
   z-index: 997;
@@ -276,6 +276,22 @@ header {
   justify-content: center;
 }
 
+.header-scrolled {
+  background: #41464b;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo a {
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
+  color: #AAA;
+}
+
+.fixed-top {
+  height: 70px;
+}
 /* Home Section */
 .bg-parallax {
   background-repeat: no-repeat;
@@ -285,7 +301,7 @@ header {
 }
 
 #home {
-  height: 100%;
+  height: 100vh;
 }
 
 #home-cover {
@@ -327,13 +343,12 @@ header {
   box-sizing: border-box;
 }
 
-.service-item-icon i {
-  padding: 15px;
-  float: left;
+.service-item-icon i.bi {
+  padding: 0.5rem;
+  font-size: 32px;
   margin-right: 25px;
+  margin-bottom: 16px;
   color: #34c6d3;
-  height: 75px;
-  width: 75px;
   text-align: center;
 
 }
@@ -631,7 +646,7 @@ ul.pricing-specification li p {
 /* Footer + Contact */
 
 footer {
-  background-color: #41464b;
+  background-color:rgb(51, 11, 11);;
   padding-top: 30px;
   border-top: 5px solid rgba(0, 0, 0, 0.1);
 }

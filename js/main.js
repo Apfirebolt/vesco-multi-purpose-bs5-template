@@ -1,7 +1,34 @@
 (function() {
   "use strict";
 
-  console.log('Main javascript file loaded')
+  /**
+   * Scrolls to an element with header offset
+   */
+   const scrollto = (el) => {
+    let header = select('#header')
+    let offset = header.offsetHeight
+
+    if (!header.classList.contains('header-scrolled')) {
+      offset -= 16
+    }
+
+    let elementPos = select(el).offsetTop
+    window.scrollTo({
+      top: elementPos - offset,
+      behavior: 'smooth'
+    })
+  }
+
+   /**
+   * Scroll with ofset on page load with hash links in the url
+   */
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        if (select(window.location.hash)) {
+          scrollto(window.location.hash)
+        }
+      }
+    });
 
   /**
    * Easy selector helper function
@@ -43,6 +70,21 @@
    */
    const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
+  }
+
+  let selectHeader = select('#header')
+  if (selectHeader) {
+    const checkHeader = () => {
+      if (window.scrollY > 100) {
+        selectHeader.classList.add('fixed-top')
+        selectHeader.classList.remove('header-scrolled')
+      } else {
+        selectHeader.classList.add('header-scrolled')
+        selectHeader.classList.remove('fixed-top')
+      }
+    }
+    window.addEventListener('load', checkHeader)
+    onscroll(document, checkHeader)
   }
 
   let backtotop = select('.back-to-top')
