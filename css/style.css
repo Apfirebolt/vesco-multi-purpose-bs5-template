@@ -648,12 +648,9 @@ ul.pricing-specification li p {
   background-color: rgba(0, 0, 0, 0.8)
 }
 
-.stats-item {
-  padding: 100px 0;
-}
-
-.stats-item i {
+.stats-item i.bi {
   color: #34c6d3;
+  font-size: 32px;
 }
 
 .stats-item h2 {
@@ -776,7 +773,6 @@ input[type="color"]:focus,
 
 #footer-menu ul li {
   display: inline-block;
-
 }
 
 #footer-menu a {

@@ -148,6 +148,13 @@
   });
 
   /**
+   * Initiate portfolio lightbox 
+   */
+   const workLightbox = GLightbox({
+    selector: '.work-lightbox'
+  });
+
+  /**
    * Testimonials slider
    */
    new Swiper('.swiper', {
