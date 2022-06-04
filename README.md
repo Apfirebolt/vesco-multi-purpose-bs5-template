@@ -6,6 +6,8 @@
 
 This theme was part of the course I enrolled in on Udemy long ago. It had this as the final project. I really liked the design of it. So, I decided to re-master this using Bootstrap 5 and other updated libraries. This project uses various plugins for sliders, animated counters and carousel.
 
+A brief description of the plugins used and the purpose they serve is listed below in the table.
+
 ## Plugins
 
 | Library	  | Purpose 						|
@@ -29,7 +31,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Please find some of the screenshots of the template. Below is the contact section of this single page template.
 
-![alt text](./screenshots/1.png)
+![alt text](./screenshots/1.jpg)
 
 Services section.
 
