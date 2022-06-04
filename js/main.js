@@ -121,6 +121,33 @@
   }
 
   /**
+   * Work isotope and filter
+   */
+   window.addEventListener('load', () => {
+    let workItemContainer = select('.work-item-container');
+    if (workItemContainer) {
+      let workItemIsotope = new Isotope(workItemContainer, {
+        itemSelector: '.work-item',
+      });
+
+      let workItemFilters = select('#work-filters li', true);
+
+      on('click', '#work-filters li', function(e) {
+        e.preventDefault();
+        workItemFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        workItemIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }, true);
+    }
+
+  });
+
+  /**
    * Testimonials slider
    */
    new Swiper('.swiper', {

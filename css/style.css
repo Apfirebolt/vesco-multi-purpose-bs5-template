@@ -414,6 +414,27 @@ header {
   padding-bottom: 0px;
 }
 
+#work-filters {
+  list-style-type: none;
+  justify-content: space-around;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+#work-filters li {
+  background:rgb(51, 11, 11);
+  color: #FFF;
+  padding: 0.5rem 1rem;
+  min-width: 120px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#work-filters li:hover {
+  background: #34c6d3;
+  cursor: pointer;
+}
+
 #work .img-responsive {
   max-width:100%;
   max-height:100%;  
