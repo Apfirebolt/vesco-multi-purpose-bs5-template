@@ -31,7 +31,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Please find some of the screenshots of the template. Below is the contact section of this single page template.
 
-![alt text](./screenshots/1.jpg)
+![alt text](./screenshots/1.png)
 
 Services section.
 
@@ -39,6 +39,6 @@ Services section.
 
 Navigation menu and hero section. 
 
-![alt text](./screenshots/3.png)
+![alt text](./screenshots/3.jpg)
 
 
