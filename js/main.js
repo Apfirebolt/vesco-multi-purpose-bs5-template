@@ -228,4 +228,6 @@
       el: '.swiper-scrollbar',
     },
   });
+
+  AOS.init();
 })()
