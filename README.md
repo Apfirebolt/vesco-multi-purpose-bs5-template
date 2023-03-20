@@ -69,6 +69,19 @@ Following resources were used for motivation in designing this template
 - https://dribbble.com/
 - https://www.free-css.com/
 
+## Updates
+
+- 21/3/23
+
+Added Docker deployment script to deploy locally through Nginx container.
+
+```
+docker build -t vesco-image . 
+docker run -d --name vesco-container -p 80:80/tcp vesco-image
+```
+
+The first line builds the image from the local Dockerfile while the second command spawsn a container from the image just created.
+
 ## Authors
 
 * **Amit Prafulla (APFirebolt)** - [My Website](https://apgiiit.com)
